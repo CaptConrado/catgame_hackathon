@@ -41,7 +41,7 @@ if (Meteor.isServer) {
                    "Player 3",
                    "Player 3"];
       for (var i = 0; i < names.length; i++)
-        Players.insert({name: names[i], score: Math.floor(Random.fraction()*10)*5});
+        Players.insert({name: names[i], score: Math.floor(Random.fraction()*0)*0});
     }
   });
 }
