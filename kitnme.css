@@ -19,8 +19,8 @@ body {
 }
 
 #outer {
-    /*width: 1024px;*/
-    /*height: 768px;*/
+    width: 1024px;
+    height: 768px;
     /*margin: 0 auto;    */
 }
 
@@ -28,6 +28,7 @@ body {
     cursor: pointer;
     float: left;
     padding: 5px;
+    font-size: 25px;
 }
 
 .leaderboard {
@@ -100,6 +101,8 @@ position:relative;
 50%  {left:0px; top:-150px;}
 75%  {left:29px; top:56px;}
 100% {left:230px; top:300px;}
+from {-webkit-transform: rotate(-359deg);}
+to   {-webkit-transform: rotate(0deg);}
 }
 
 .p{
@@ -141,7 +144,7 @@ animation:mic 5s linear 2s infinite alternate;
 {
 0%   {-moz-transform: rotate(0deg);left:0px;}
 25%  {-moz-transform: rotate(20deg);left:0px;}
-50%  {-moz-transform: rotate(0deg);left:500px;}
+50%  {-moz-transform: rotate(45deg);left:500px;}
 55%  {-moz-transform: rotate(0deg);left:500px;}
 70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
 100% {-moz-transform: rotate(-360deg);left:0px;}
