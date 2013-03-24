@@ -43,8 +43,12 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   Meteor.startup(function () {
     if (Players.find().count() === 0) {
-      var names = ["Kitty 1",
-                   "Kitty 2"];
+      var names = ["Heathcliff",
+                   "Felix",
+                   "Garfield",
+                   "Hobbes",
+                   "Calvin",
+                   "Scratchy"];
       for (var i = 0; i < names.length; i++)
         Players.insert({name: names[i], score: Math.floor(Random.fraction()*0)*0});
     }
