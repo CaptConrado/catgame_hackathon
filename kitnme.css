@@ -12,7 +12,7 @@ body {
     /*background: #00ff00 url('http://cathack-assets.herokuapp.com/r/bd/bg_blueglow.png') no-repeat fixed center;*/
     /*background: #00ff00 url('http://cathack-assets.herokuapp.com/r/bd/bg_window_green.jpg')no-repeat fixed center;*/
     /*background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_deepblue.png');*/
-    background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_window_fuchsia.jpg');
+    background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_wood.jpg');
     
 
 
@@ -138,26 +138,6 @@ animation:mic 5s linear 2s infinite alternate;
 55%     {-webkit-transform: rotate(0deg);left:500px;}
 70%     {-webkit-transform: rotate(0deg);left:500px;}
 100%    {-webkit-transform: rotate(-360deg);left:0px;}
-}
-
-@-moz-keyframes mic
-{
-0%   {-moz-transform: rotate(0deg);left:0px;}
-25%  {-moz-transform: rotate(20deg);left:0px;}
-50%  {-moz-transform: rotate(45deg);left:500px;}
-55%  {-moz-transform: rotate(0deg);left:500px;}
-70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100% {-moz-transform: rotate(-360deg);left:0px;}
-}
-
-@-o-keyframes mic
-{
-0%   {transform: rotate(0deg);left:0px;}
-25%  {transform: rotate(20deg);left:0px;}
-50%  {transform: rotate(0deg);left:500px;}
-55%  {transform: rotate(0deg);left:500px;}
-70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100% {transform: rotate(-360deg);left:0px;}
 }
 
 .inc3 {
