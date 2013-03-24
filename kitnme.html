@@ -12,16 +12,23 @@
 </body>
 
 <template name="leaderboard">
+  <center>
   <div class="leaderboard">
+    
     {{#each players}}
       {{> player}}
     {{/each}}
+  
   </div>
+</center>
 
   {{#if selected_name}}
   <div class="details">
     <div class="name">{{selected_name}}</div>
-    <input type="button" class="inc" value="Give 5 points" />
+    <input type="image" class="inc" src="http://cathack-assets.herokuapp.com/r/buttons/btn_bg_gold.png" />
+    <input type="image" class="inc2" src="http://cathack-assets.herokuapp.com/r/buttons/btn_bg_yellow.png" />
+    <input type="image" class="inc3" src="http://cathack-assets.herokuapp.com/r/buttons/btn_bg_blue.png" />
+    <input type="image" class="inc4" src="http://cathack-assets.herokuapp.com/r/buttons/btn_bg_green.png" />
   </div>
   {{/if}}
 
