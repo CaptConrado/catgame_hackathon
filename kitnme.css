@@ -64,7 +64,7 @@ body {
 }
 
 .topbar{
-    border-style: none none dashed none;
+    /*border-style: none none dashed none;*/
     border-color: #ccc;
     border-width: 4px;
 
