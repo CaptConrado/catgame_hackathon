@@ -117,9 +117,9 @@ position:relative;
 {
     0%   {left:0px; top:0px;}
     25%  {left:500px; top:0px;}
-    50%  {left:0px; top:-150px;}
+    50%  {left:0px; top:-350px;}
     75%  {left:29px; top:56px;}
-    100% {left:230px; top:300px;}
+    100% {left:230px; top:400px;}
     from {-webkit-transform: rotate(-359deg);}
     to   {-webkit-transform: rotate(0deg);}
 }
@@ -150,7 +150,7 @@ position:relative;
 .inc7 {
     position:relative;
     width:150px;height:150px;
-    -webkit-animation:rotation 1s linear 1s infinite alternate;
+    -webkit-animation:rotation 6s linear 1s infinite alternate;
 }
 
 @-webkit-keyframes mic
@@ -191,9 +191,9 @@ position:relative;
 }
 @-webkit-keyframes last {
     0%      {-webkit-transform: rotate(0deg);top:0px;}
-    25%     {-webkit-transform: rotate(90deg);top:500px;}
-    50%     {-webkit-transform: rotate(180deg);top:-1000px;}
-    75%     {-webkit-transform: rotate(-1080deg);top:900px;}
+    25%     {-webkit-transform: rotate(90deg);left:500px;}
+    50%     {-webkit-transform: rotate(180deg);right:400px;}
+    75%     {-webkit-transform: rotate(-1080deg);bottom:700px;}
     /*100%    {-webkit-transform: rotate(180deg);top:300px;}*/
 
 }
