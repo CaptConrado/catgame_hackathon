@@ -10,7 +10,9 @@ body {
     user-select: none;
     /*background: #00ff00 url('http://cathack-assets.herokuapp.com/r/bd/bg_blueglow.png') no-repeat fixed center;*/
     /*background: #00ff00 url('http://cathack-assets.herokuapp.com/r/bd/bg_window_green.jpg')no-repeat fixed center;*/
-    background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_deepblue.png');
+    /*background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_deepblue.png');*/
+    background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_window_fuchsia.jpg');
+    
 
 
 }
