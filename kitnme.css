@@ -32,7 +32,7 @@ body {
 
 .leaderboard {
     text-align:center;
-    background-color: pink;
+    /*background-color: pink;*/
     width:500px;
     height:200px;
     margin:5px;
@@ -102,6 +102,10 @@ position:relative;
 100% {left:230px; top:300px;}
 }
 
+.p{
+
+    float: left;
+}
 
 
 .inc2
@@ -151,4 +155,21 @@ animation:mic 5s linear 2s infinite alternate;
 55%  {transform: rotate(0deg);left:500px;}
 70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
 100% {transform: rotate(-360deg);left:0px;}
+}
+
+.inc3 {
+    -webkit-animation: rotation 1s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+.inc4 {
+    -webkit-animation: rotation .25s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(-359deg);}
+    to   {-webkit-transform: rotate(0deg);}
 }

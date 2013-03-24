@@ -4,6 +4,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <script type="text/javascript" src="http://cathack-assets.herokuapp.com/balls.js"></script>
 </head>
 
 <body>
@@ -33,6 +34,7 @@
     <input type="image" class="inc3" src="http://cathack-assets.herokuapp.com/r/buttons/btn_bg_blue.png" />
     <input type="image" class="inc4" src="http://cathack-assets.herokuapp.com/r/buttons/btn_bg_green.png" />
   </div>
+  <canvas id="layer"></canvas>
   {{/if}}
 
   {{#unless selected_name}}
@@ -41,9 +43,11 @@
 </template>
 
 <template name="player">
+  <div class="joe">
   <div class="player {{selected}}">
     <span class="name">{{name}}</span>
     <span class="score">{{score}}</span>
   </div>
+</div>
 </template>
 
