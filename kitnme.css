@@ -1,7 +1,7 @@
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 200;
-    margin: 50px 0;
+    margin: 0;
     /*padding: 30;*/
     overflow:hidden;
     -webkit-user-select: none;
@@ -12,18 +12,22 @@ body {
     /*background: #00ff00 url('http://cathack-assets.herokuapp.com/r/bd/bg_blueglow.png') no-repeat fixed center;*/
     /*background: #00ff00 url('http://cathack-assets.herokuapp.com/r/bd/bg_window_green.jpg')no-repeat fixed center;*/
     /*background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_deepblue.png');*/
-    background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_wood.jpg');
-    width: 1024px;
-    height: 768px;
-    
-
-
-}
+    /*background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_wood.jpg');*/
+    background-image:url('http://cathack-assets.herokuapp.com/r/bd/bg_wood.jpg'),url(img_tree.gif);
+    }
 
 #outer {
-    /*width: 1024px;*/
-    /*height: 768px;*/
-    /*margin: 0 auto;    */
+    width: 1024px;
+    height: 768px;
+    top: 0;
+    left: 0;
+    background-repeat:no-repeat;
+        /*background - color: #003466;background-repeat:no-repeat;position:absolute;overflow:hidden;font-family:Verdana,Geneva,sans-serif;font-weight:bolder;font-size:32px;display:none;}*/
+            /*width: 1024px;
+            height: 768px;
+            top: 0;
+            left: 0;
+            position: absolute;*/
 }
 
 .player {
