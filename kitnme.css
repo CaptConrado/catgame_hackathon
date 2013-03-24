@@ -59,12 +59,16 @@ body {
     color: black;
 }
 
+.topbar{
+    border-style: none none dashed none;
+    border-color: #ccc;
+    border-width: 4px;
+
+}
+
 .details, .none {
     font-weight: bold;
     font-size: 2em;
-    border-style: dashed none none none;
-    border-color: #ccc;
-    border-width: 4px;
     margin: 50px 10px;
     padding: 10px 0px;
 }
