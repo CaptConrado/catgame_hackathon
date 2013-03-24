@@ -106,7 +106,7 @@ body {
 
 .inc
 {
-/*width:100px;height:100px;*/
+width:200px;height:200px;
 position:relative;
 /*animation:myfirst 5s linear 2s infinite alternate;*/
 -webkit-animation:myfirst 5s linear 1s infinite alternate;
@@ -115,37 +115,32 @@ position:relative;
 @-webkit-keyframes myfirst 
  
 {
-0%   {left:0px; top:0px;}
-25%  {left:500px; top:0px;}
-50%  {left:0px; top:-150px;}
-75%  {left:29px; top:56px;}
-100% {left:230px; top:300px;}
-from {-webkit-transform: rotate(-359deg);}
-to   {-webkit-transform: rotate(0deg);}
+    0%   {left:0px; top:0px;}
+    25%  {left:500px; top:0px;}
+    50%  {left:0px; top:-150px;}
+    75%  {left:29px; top:56px;}
+    100% {left:230px; top:300px;}
+    from {-webkit-transform: rotate(-359deg);}
+    to   {-webkit-transform: rotate(0deg);}
 }
-
-/*.p{
-    float: left;
-}
-*/
 
 .inc2
 {
 /*width:100px;height:100px;*/
 position:relative;
-animation:mic 5s linear 2s infinite alternate;
+/*animation:mic 5s linear 2s infinite alternate;*/
 -webkit-animation:mic 5s linear 1s infinite alternate;
 
 }
 
-@keyframes mic
-{
-0%      {transform: rotate(0deg);left:0px;}
-25%     {transform: rotate(20deg);left:0px;}
-50%     {transform: rotate(0deg);left:500px;}
-55%     {transform: rotate(0deg);left:500px;}
-70%     {transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100%    {transform: rotate(-360deg);left:0px;}
+.inc3 {
+    position:relative;
+
+    -webkit-animation:move_1 4s infinite linear;
+}
+
+.inc4 {
+    -webkit-animation: rotation .25s infinite linear;
 }
 
 @-webkit-keyframes mic
@@ -158,21 +153,41 @@ animation:mic 5s linear 2s infinite alternate;
 100%    {-webkit-transform: rotate(-360deg);left:0px;}
 }
 
-.inc3 {
-  top: 0;
-
-    -webkit-animation: rotation 1s infinite linear;
-}
-
 @-webkit-keyframes rotation {
     from {-webkit-transform: rotate(0deg);}
     to   {-webkit-transform: rotate(359deg);}
 }
+
+@-webkit-keyframes move_1 {
+    0%      {-webkit-transform: rotate(0deg);left:0px;}
+    25%     {-webkit-transform: rotate(90deg);top:200px;}
+    50%     {-webkit-transform: rotate(0deg);bottom:500px;}
+    55%     {-webkit-transform: rotate(0deg);left:500px;}
+    70%     {-webkit-transform: rotate(0deg);right:500px;}
+    75%     {-webkit-transform: rotate(0deg);bottom:300px;}
+    100%    {-webkit-transform: rotate(-360deg);left:0px;}
+
+}
+
+
+
+
 .inc4 {
     -webkit-animation: rotation .25s infinite linear;
 }
 
-@-webkit-keyframes rotation {
-    from {-webkit-transform: rotate(-359deg);}
-    to   {-webkit-transform: rotate(0deg);}
+
+.inc5 {
+    -webkit-animation: rotation .50s infinite linear;
 }
+
+
+.inc6 {
+    -webkit-animation: rotation .50s infinite linear;
+}
+
+
+.inc7 {
+    -webkit-animation: rotation .50s infinite linear;
+}
+

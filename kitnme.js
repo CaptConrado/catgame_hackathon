@@ -30,7 +30,22 @@ if (Meteor.isClient) {
     },
     'click input.inc4': function () {
       Players.update(Session.get("selected_player"), {$inc: {score: 5}});
+    },
+    'click input.inc5': function () {
+      Players.update(Session.get("selected_player"), {$inc: {score: 5}});
+    },
+    'click input.inc6': function () {
+      Players.update(Session.get("selected_player"), {$inc: {score: 5}});
+    },
+    'click input.inc7': function () {
+      Players.update(Session.get("selected_player"), {$inc: {score: 5}});
     }
+    // 'click input.inc8': function () {
+    //   Players.update(Session.get("selected_player"), {$inc: {score: 5}});
+    // }
+    // 'click input.inc9': function () {
+    //   Players.update(Session.get("selected_player"), {$inc: {score: 5}});
+    // }
   });
 
   Template.player.events({
