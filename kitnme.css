@@ -89,7 +89,7 @@ position:relative;
 -webkit-animation:myfirst 5s linear 1s infinite alternate;
 }
 
-/*@-webkit-keyframes myfirst 
+@-webkit-keyframes myfirst 
  
 {
 0%   {left:0px; top:0px;}
@@ -98,4 +98,54 @@ position:relative;
 75%  {left:29px; top:56px;}
 100% {left:230px; top:300px;}
 }
-*/
+
+
+
+.inc2
+{
+/*width:100px;height:100px;*/
+position:relative;
+animation:mic 5s linear 2s infinite alternate;
+-webkit-animation:mic 5s linear 1s infinite alternate;
+
+}
+
+@keyframes mic
+{
+0%      {transform: rotate(0deg);left:0px;}
+25%     {transform: rotate(20deg);left:0px;}
+50%     {transform: rotate(0deg);left:500px;}
+55%     {transform: rotate(0deg);left:500px;}
+70%     {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100%    {transform: rotate(-360deg);left:0px;}
+}
+
+@-webkit-keyframes mic
+{
+0%      {-webkit-transform: rotate(0deg);left:0px;}
+25%     {-webkit-transform: rotate(20deg);left:0px;}
+50%     {-webkit-transform: rotate(0deg);left:500px;}
+55%     {-webkit-transform: rotate(0deg);left:500px;}
+70%     {-webkit-transform: rotate(0deg);left:500px;}
+100%    {-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+@-moz-keyframes mic
+{
+0%   {-moz-transform: rotate(0deg);left:0px;}
+25%  {-moz-transform: rotate(20deg);left:0px;}
+50%  {-moz-transform: rotate(0deg);left:500px;}
+55%  {-moz-transform: rotate(0deg);left:500px;}
+70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+
+@-o-keyframes mic
+{
+0%   {transform: rotate(0deg);left:0px;}
+25%  {transform: rotate(20deg);left:0px;}
+50%  {transform: rotate(0deg);left:500px;}
+55%  {transform: rotate(0deg);left:500px;}
+70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+}
