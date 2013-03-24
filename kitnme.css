@@ -2,7 +2,7 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 200;
     margin: 0;
-    /*padding: 30;*/
+    padding: 30;
     overflow:hidden;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -13,7 +13,7 @@ body {
     /*background: #00ff00 url('http://cathack-assets.herokuapp.com/r/bd/bg_window_green.jpg')no-repeat fixed center;*/
     /*background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_deepblue.png');*/
     /*background: black url('http://cathack-assets.herokuapp.com/r/bd/bg_wood.jpg');*/
-    background-image:url('http://cathack-assets.herokuapp.com/r/bd/bg_wood.jpg'),url(img_tree.gif);
+    background-image:url(http://cathack-assets.herokuapp.com/r/bd/bg_wood.jpg);
     }
 
 #outer {
@@ -34,31 +34,38 @@ body {
     cursor: pointer;
     float: left;
     padding: 5px;
-    font-size: 25px;
+    font-size: 20px;
+
 }
 
 .leaderboard {
     text-align:center;
     /*background-color: pink;*/
-    width:500px;
-    height:200px;
+    width:1024px;
+    height:75px;
     margin:5px;
 
 }
 
-.player .name {
+.name {
     /*display: inline-block;*/
-    /*width: 300px;*/
-    /*font-size: 1.75em;*/
+    width: 120px;
+    font-size: 1.75em;
+}
+.score_block .player{
+    background-color: blue;
+    margin: 5px;
+    border-radius: 15px;
+    opacity:0.80;
 }
 
 .player .score {
     display: inline-block;
-    width: 100px;
+    width: 90px;
     text-align: right;
     font-size: 2em;
     font-weight: bold;
-    color: #777;
+    color: white;
 }
 
 .player.selected {
@@ -67,6 +74,12 @@ body {
 
 .player.selected .score {
     color: black;
+}
+
+.yum{
+
+    align: right;
+    /*margin-bottom: 150px;*/
 }
 
 .topbar{
@@ -84,7 +97,7 @@ body {
 }
 
 .none {
-    color: #777;
+    color: black;
 }
 
 /*.inc {
@@ -111,11 +124,10 @@ from {-webkit-transform: rotate(-359deg);}
 to   {-webkit-transform: rotate(0deg);}
 }
 
-.p{
-
+/*.p{
     float: left;
 }
-
+*/
 
 .inc2
 {

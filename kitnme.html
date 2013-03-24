@@ -9,9 +9,11 @@
 </head>
 
 <body>
+
   <div id="outer">
     {{> leaderboard}}
   </div>
+  
 </body>
 
 <template name="leaderboard">
@@ -24,30 +26,35 @@
     {{/each}}
   
   </div>
+
 </div>
+
 </center>
 
   {{#if selected_name}}
+  <span class="name"><img class="yum" src="http://cathack-assets.herokuapp.com/r/logos/logo_friskies.png"><center>Go {{selected_name}}!</center></span>
+
   <div class="details">
-    <div class="name">{{selected_name}}</div>
+    
     <input type="image" draggable="true" class="inc" src="http://cathack-assets.herokuapp.com/r/p/kibble_01.png" />
     <input type="image" draggable="true" class="inc2" src="http://cathack-assets.herokuapp.com/r/p/kibble_02.png" />
     <input type="image" id="dragme" draggable="true" class="inc3" src="http://cathack-assets.herokuapp.com/r/p/kibble_03.png" />
     <input type="image" draggable="true" class="inc4" src="http://cathack-assets.herokuapp.com/r/p/kibble_04.png" />
-  <!-- <canvas id="layer"></canvas> -->
+  
   {{/if}}
 
+
+
   {{#unless selected_name}}
-  <div class="none">Click a player to select</div>
+  <center><div class="none">Click a player to begin</div></center>
   {{/unless}}
 </template>
 
 <template name="player">
-  <div class="joe">
+  <div class="score_block">
   <div class="player {{selected}}">
     <span class="name">{{name}}</span>
     <span class="score">{{score}}</span>
-
   </div>
 </div>
 </template>
