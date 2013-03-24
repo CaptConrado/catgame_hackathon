@@ -46,9 +46,7 @@ if (Meteor.isServer) {
       var names = ["Player 1",
                    "Kitty 1",
                    "Player 2",
-                   "Kitty 2",
-                   "Player 3",
-                   "Kitty 3"];
+                   "Kitty 2"];
       for (var i = 0; i < names.length; i++)
         Players.insert({name: names[i], score: Math.floor(Random.fraction()*0)*0});
     }
